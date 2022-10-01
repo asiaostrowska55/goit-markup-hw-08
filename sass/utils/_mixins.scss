@@ -1,0 +1,54 @@
+@import "./colors";
+@import "./fonts";
+@import "./variables";
+
+@mixin flex($align-t: center) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: $align-t;
+  margin: 0;
+}
+@mixin transition($speed: 250ms, $timing: cubic-bezier(0.4, 0, 0.2, 1)) {
+  transition-duration: $speed;
+  transition-timing-function: $timing;
+}
+
+@mixin font-style($height: 1.16, $weight, $spacing: 0.03em) {
+  line-height: $height;
+  font-weight: $weight;
+  letter-spacing: $spacing;
+  margin: 0;
+}
+@mixin index-btn {
+  width: 200px;
+  height: 50px;
+  border-radius: 4px;
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  border: 1px getColor("btn-border");
+  color: getColor("light");
+  background-color: getColor("brand");
+  cursor: pointer;
+}
+@mixin index-btn-hover {
+  box-shadow: getShadow("btn");
+  transform: $scale;
+  background-color: getColor("btn-change");
+}
+@mixin icon($fill: getColor("icon")) {
+  fill: $fill;
+  cursor: pointer;
+}
+@mixin form-placeholder {
+  &::-webkit-input-placeholder {
+    color: getColor("form-comment");
+  }
+  &::-moz-placeholder {
+    color: getColor("form-comment");
+  }
+  &::-ms-input-placeholder {
+    color: getColor("form-comment");
+  }
+}

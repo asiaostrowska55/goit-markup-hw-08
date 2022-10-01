@@ -1,0 +1,48 @@
+body {
+  font-family: "Roboto", "Raleway", sans-serif;
+  color: getColor("primary");
+  margin: 0;
+}
+.container {
+  width: 1200px;
+  margin: 0 auto;
+}
+img {
+  display: block;
+  margin-right: 0;
+}
+.contact {
+  @include transition;
+  @include font-style($weight: $font-medium, $spacing: 0.02em);
+  color: getColor("secondary");
+  font-size: getFont("regular");
+  text-decoration: none;
+  &:hover {
+    color: getColor("brand");
+  }
+  &:focus {
+    color: getColor("brand");
+  }
+  &:focus .icon--color {
+    @include transition;
+    fill: getColor("brand");
+  }
+  &:hover .icon--color {
+    @include transition;
+    fill: getColor("brand");
+  }
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+.section {
+  padding: 94px 0;
+}
+.heading {
+  @include flex;
+  @include font-style($weight: $font-bold);
+  font-size: getFont("titles");
+  padding-bottom: 50px;
+}

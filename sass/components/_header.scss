@@ -1,0 +1,76 @@
+.header {
+  border-bottom: 1px solid getColor("border");
+  height: 100%;
+  &__items {
+    @include flex;
+  }
+  &__list {
+    @include flex;
+    list-style: none;
+    padding: 32px 0 32px 93px;
+    gap: 46px;
+  }
+  &__position {
+    position: relative;
+  }
+  &__link {
+    @include font-style($weight: $font-medium, $spacing: 0.02em);
+    @include transition;
+    font-size: getFont("regular");
+    color: getColor("primary");
+    text-decoration: none;
+    &:hover {
+      color: getColor("brand");
+    }
+    &:focus {
+      color: getColor("brand");
+    }
+  }
+  &__link--active {
+    color: getColor("brand");
+  }
+  &__contact {
+    @include transition;
+    @include flex;
+    list-style: none;
+    margin-left: auto;
+    gap: 50px;
+  }
+  &__icon {
+    margin-right: 10px;
+    fill: getColor("secondary");
+    cursor: pointer;
+  }
+}
+.header__link--active::after {
+  width: 100%;
+  height: 4px;
+  border-radius: 2px;
+  background-color: getColor("brand");
+  content: "";
+  position: absolute;
+  bottom: 0;
+  display: block;
+  transform: translateY(33px);
+}
+.logo {
+  @include font-style($weight: $font-bold);
+  @include transition;
+  font-family: "Raleway";
+  color: getColor("logo");
+  text-decoration: none;
+  padding: 24px 0 25px 15px;
+  font-size: getFont("webstudio");
+  &--blue {
+    color: getColor("brand");
+  }
+  &:hover {
+    color: getColor("brand");
+  }
+  &:focus {
+    color: getColor("brand");
+  }
+}
+.icon--color {
+  @include icon($fill: getColor("secondary"));
+}

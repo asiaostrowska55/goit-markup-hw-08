@@ -1,0 +1,27 @@
+.offer {
+  @include flex;
+  list-style: none;
+  padding: 0 15px;
+  gap: 30px;
+  &__image {
+    position: relative;
+    overflow: hidden;
+    & > .offer__label {
+      position: absolute;
+      right: 0;
+      left: 0;
+      bottom: 0;
+      margin: 0;
+      padding-top: 27px;
+      padding-bottom: 27px;
+      background-color: getColor("offer-bg");
+    }
+  }
+  &__label {
+    text-transform: uppercase;
+    color: getColor("light");
+    font-size: getFont("regular");
+    font-weight: $font-bold;
+    text-align: center;
+  }
+}

@@ -1,0 +1,41 @@
+.project {
+  @include flex($align-t: left);
+  gap: 30px;
+  flex-wrap: wrap;
+  list-style: none;
+  padding-left: 15px;
+  flex-basis: calc((100% - 2 * 30px) / 3);
+  &__item {
+    display: block;
+    list-style: none;
+    background-color: getColor("light");
+    width: 370px;
+    height: 404px;
+    cursor: pointer;
+    &:hover {
+      box-shadow: getShadow("project");
+    }
+  }
+  &__figure {
+    display: block;
+    margin: 0px;
+    &:hover .overlay__text {
+      transform: $move-none;
+    }
+  }
+  &__figcaption {
+    display: block;
+    padding: 20.4px 24px;
+    border: 1px solid getColor("border");
+    margin: 0;
+  }
+  &__title {
+    @include font-style($weight: $font-bold, $height: 2, $spacing: 0.06em);
+    font-size: getFont("text");
+  }
+  &__descr {
+    @include font-style($weight: $font-normal, $height: 1.88, $spacing: 0.06em);
+    font-size: getFont("team");
+    color: getColor("secondary");
+  }
+}

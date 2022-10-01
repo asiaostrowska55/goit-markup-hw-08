@@ -1,0 +1,19 @@
+@import "utils/colors";
+@import "utils/fonts";
+@import "utils/mixins";
+@import "utils/variables";
+//
+@import "components/general";
+@import "components/header";
+//index
+@import "components/top-section";
+@import "components/offer";
+@import "components/team";
+@import "components/client";
+//portfolio
+@import "components/project";
+@import "components/portfolio-btn";
+@import "components/overlay";
+//
+@import "components/footer";
+@import "components/modal-window";

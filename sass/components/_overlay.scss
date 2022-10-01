@@ -1,0 +1,23 @@
+.text {
+  @include font-style($weight: $font-normal, $height: 1.56);
+  font-size: getFont("text");
+  color: getColor("light");
+  text-align: start;
+  padding: 49px 45px 49px 24px;
+}
+
+.overlay {
+  position: absolute;
+  width: 370px;
+  height: 294px;
+  overflow: hidden;
+  &__text {
+    @include transition($speed: 400ms);
+    position: absolute;
+    background-color: getColor("overlay-bg");
+    transform: $move-all;
+  }
+}
+.project__figure:hover .overlay__text {
+  transform: translateY(0);
+}

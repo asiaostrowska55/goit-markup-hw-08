@@ -1,0 +1,28 @@
+.button {
+  @include flex;
+  @include transition;
+  list-style: none;
+  gap: 8px;
+  margin-bottom: 51px;
+  &__label {
+    @include font-style($weight: $font-medium, $height: 1.62);
+    font-weight: 500;
+    font-size: getFont("btn");
+    background-color: getColor("light-bg");
+    border: getColor("btn-border");
+    border-radius: $radius;
+    cursor: pointer;
+    padding: 6px 22px;
+    &:hover {
+      @include transition;
+      color: getColor("light");
+      background-color: getColor("brand");
+      box-shadow: getShadow("portfolio-btn");
+    }
+    &:focus {
+      color: getColor("light");
+      background-color: getColor("brand");
+      box-shadow: getShadow("portfolio-btn");
+    }
+  }
+}
