@@ -4,13 +4,13 @@
   justify-content: center;
   height: 600px;
   max-width: 100%;
-  background-image: url(/images/background.jpg);
+  background-image: url(../images/bg-mobile.jpg);
   background-size: cover;
   margin: 0 auto;
   &__label {
     @include flex;
     @include font-style($weight: $font-black, $spacing: 0.06em);
-    font-size: getFont("label");
+    font-size: getFont("webstudio");
     color: getColor("light");
     padding: 200px 0 30px;
   }
