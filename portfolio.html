@@ -66,10 +66,24 @@
           </li>
         </ul>
       </div>
+      <button
+        class="mobile__toggle js-open-menu"
+        aria-expanded="false"
+        aria-controls="mobile-menu"
+      >
+        <svg class="mobile__icon">
+          <use
+            href="./images/icons.svg#icon-menu"
+            width="24px"
+            height="24px"
+          ></use>
+        </svg>
+      </button>
     </header>
 
     <main class="container">
       <section class="section">
+        <!-- buttoms -->
         <ul class="button">
           <li>
             <button type="button" class="button__label">Wszystkie</button>
@@ -87,7 +101,7 @@
             <button type="button" class="button__label">Marketing</button>
           </li>
         </ul>
-
+        <!-- grid -->
         <ul class="project">
           <li class="project__item">
             <figure class="project__figure">
@@ -103,8 +117,7 @@
               </div>
               <img
                 src="images/1laptop.jpg"
-                height="294"
-                width="370"
+                srcset="images/1laptop@2x.jpg"
                 alt="laptop screen showing a website with team members"
               />
               <figcaption class="project__figcaption">
@@ -128,8 +141,7 @@
               </div>
               <img
                 src="images/2basketball.jpg"
-                height="294"
-                width="370"
+                srcset="images/2basketball@2x.jpg"
                 alt="two basketball players playing basketball"
               />
               <figcaption class="project__figcaption">
@@ -155,8 +167,7 @@
               </div>
               <img
                 src="images/3seafood.jpg"
-                height="294"
-                width="370"
+                srcset="images/3seafood@2x.jpg"
                 alt="seafood restaurant logo with fish graphic in the background"
               />
               <figcaption class="project__figcaption">
@@ -180,8 +191,7 @@
               </div>
               <img
                 src="images/4headphones.jpg"
-                height="294"
-                width="370"
+                srcset="images/4headphones@2x.jpg"
                 alt="black headphones"
               />
               <figcaption class="project__figcaption">
@@ -205,8 +215,7 @@
               </div>
               <img
                 src="images/5twoboxes.jpg"
-                height="294"
-                width="370"
+                srcset="images/5twoboxes@2x.jpg"
                 alt="white and light orange boxes with captions"
               />
               <figcaption class="project__figcaption">
@@ -230,8 +239,7 @@
               </div>
               <img
                 src="images/6monitor.jpg"
-                height="294"
-                width="370"
+                srcset="images/6monitor@2x.jpg"
                 alt="work screen with data on it"
               />
               <figcaption class="project__figcaption">
@@ -255,8 +263,7 @@
               </div>
               <img
                 src="images/7magazines.jpg"
-                height="294"
-                width="370"
+                srcset="images/7magazines@2x.jpg"
                 alt="open womens magazine"
               />
               <figcaption class="project__figcaption">
@@ -280,8 +287,7 @@
               </div>
               <img
                 src="images/8labtag.jpg"
-                height="294"
-                width="370"
+                srcset="images/8labtag@2x.jpg"
                 alt="white label with label tag caption"
               />
               <figcaption class="project__figcaption">
@@ -305,8 +311,7 @@
               </div>
               <img
                 src="images/9typing.jpg"
-                height="294"
-                width="370"
+                srcset="images/9typing@2x.jpg"
                 alt="person typing on laptops keyboard"
               />
               <figcaption class="project__figcaption">
@@ -318,7 +323,7 @@
         </ul>
       </section>
     </main>
-
+    <!-- footer -->
     <footer class="footer">
       <div class="container">
         <div class="footer-contact">
@@ -329,10 +334,12 @@
           >
           <address class="address">
             m. Warszawa, Aleje Jerozolimskie 21
-            <a href="mailto:info@devstudio.com" class="contact"
+            <a href="mailto:info@devstudio.com" class="address__contact"
               >info@devstudio.com</a
             >
-            <a href="tel:+48111111111" class="contact">+48 111 111 111</a>
+            <a href="tel:+48111111111" class="address__contact"
+              >+48 111 111 111</a
+            >
           </address>
         </div>
 

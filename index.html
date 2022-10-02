@@ -31,22 +31,15 @@
         <nav>
           <ul class="header__list">
             <li class="header__position">
-              <a
-                href="./index.html"
-                class="header__link header__link--active"
+              <a href="./index.html" class="header__link header__link--active"
                 >Agencja</a
               >
             </li>
             <li>
-              <a href="./portfolio.html" class="header__link"
-                >Portfolio</a
-              >
+              <a href="./portfolio.html" class="header__link">Portfolio</a>
             </li>
             <li>
-              <a
-                href="#"
-                rel="noopener noreferrer"
-                class="header__link"
+              <a href="#" rel="noopener noreferrer" class="header__link"
                 >Kontakt</a
               >
             </li>
@@ -71,6 +64,19 @@
           </li>
         </ul>
       </div>
+      <button
+        class="mobile__toggle js-open-menu"
+        aria-expanded="false"
+        aria-controls="mobile-menu"
+      >
+        <svg class="mobile__icon">
+          <use
+            href="./images/icons.svg#icon-menu"
+            width="24px"
+            height="24px"
+          ></use>
+        </svg>
+      </button>
     </header>
 
     <main>
@@ -80,107 +86,99 @@
           DLA WASZEGO BIZNESU
         </h1>
         <p class="title__btn">
-          <button
-            type="button"
-            class="btn"
-            data-modal-open
-          >
+          <button type="button" class="btn" data-modal-open>
             Zamów usługe
           </button>
         </p>
       </div>
-<!-- top section -->
+      <!-- top section -->
       <section class="container section">
-          <ul class="list">
-            <li class="list__item">
-              <div class="list__icon">
-                <svg width="70px" height="70px">
-                  <use href="./images/icons.svg#icon-antenna"></use>
-                </svg>
-              </div>
-              <h5 class="list__label">LOREM IPSUM</h5>
-              <p class="list__paragraph">
-                Lorem ipsum dolor sit amet, consectetur 
-                adipiscing elit. Nam vel arcu sem. Sed 
-                non sodales dui. Interdum et malesuada
-              </p>
-            </li>
-            <li class="list__item">
-              <div class="list__icon">
-                <svg width="70px" height="70px">
-                  <use href="./images/icons.svg#icon-clock"></use>
-                </svg>
-              </div>
-              <h5 class="list__label">LOREM IPSUM</h5>
-              <p class="list__paragraph">
-                Lorem ipsum dolor sit amet, consectetur 
-                adipiscing elit. Nam vel arcu sem. Sed 
-                non sodales dui. Interdum et malesuada
-              </p>
-            </li>
-            <li class="list__item">
-              <div class="list__icon">
-                <svg width="70px" height="70px">
-                  <use href="./images/icons.svg#icon-diagram"></use>
-                </svg>
-              </div>
-              <h5 class="list__label">LOREM IPSUM</h5>
-              <p class="list__paragraph">
-                Lorem ipsum dolor sit amet, consectetur 
-                adipiscing elit. Nam vel arcu sem. Sed 
-                non sodales dui. Interdum et malesuada
-              </p>
-            </li>
-            <li class="list__item">
-              <div class="list__icon">
-                <svg width="70px" height="70px">
-                  <use href="./images/icons.svg#icon-astronaut"></use>
-                </svg>
-              </div>
-              <h5 class="list__label">LOREM IPSUM</h5>
-              <p class="list__paragraph">
-                Lorem ipsum dolor sit amet, consectetur 
-                adipiscing elit. Nam vel arcu sem. Sed 
-                non sodales dui. Interdum et malesuada
-              </p>
-            </li>
-          </ul>
+        <ul class="list">
+          <li class="list__item">
+            <div class="list__icon">
+              <svg width="70px" height="70px">
+                <use href="./images/icons.svg#icon-antenna"></use>
+              </svg>
+            </div>
+            <h5 class="list__label">LOREM IPSUM</h5>
+            <p class="list__paragraph">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel
+              arcu sem. Sed non sodales dui. Interdum et malesuada
+            </p>
+          </li>
+          <li class="list__item">
+            <div class="list__icon">
+              <svg width="70px" height="70px">
+                <use href="./images/icons.svg#icon-clock"></use>
+              </svg>
+            </div>
+            <h5 class="list__label">LOREM IPSUM</h5>
+            <p class="list__paragraph">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel
+              arcu sem. Sed non sodales dui. Interdum et malesuada
+            </p>
+          </li>
+          <li class="list__item">
+            <div class="list__icon">
+              <svg width="70px" height="70px">
+                <use href="./images/icons.svg#icon-diagram"></use>
+              </svg>
+            </div>
+            <h5 class="list__label">LOREM IPSUM</h5>
+            <p class="list__paragraph">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel
+              arcu sem. Sed non sodales dui. Interdum et malesuada
+            </p>
+          </li>
+          <li class="list__item">
+            <div class="list__icon">
+              <svg width="70px" height="70px">
+                <use href="./images/icons.svg#icon-astronaut"></use>
+              </svg>
+            </div>
+            <h5 class="list__label">LOREM IPSUM</h5>
+            <p class="list__paragraph">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel
+              arcu sem. Sed non sodales dui. Interdum et malesuada
+            </p>
+          </li>
+        </ul>
       </section>
-<!-- offer -->
-      <section class=" container">
-          <h2 class="heading-offer">Czym się zajmujemy</h2>
-          <ul class="offer">
-            <li class="offer__image">
-              <img
-                src="images/image(1).jpg"
-                srcset="images/image(1).jpg"
-                width="370"
-                height="294"
-                alt="close up image programer working his desk office"
-              />
-              <p class="offer__label">aplikacje komputerowe</p>
-            </li>
-            <li class="offer__image">
-              <img
-                src="images/image(2).jpg"
-                width="370"
-                height="294"
-                alt="web ui designers are developing application smartphones team creators is working interface mobile phones"
-              />
-              <p class="offer__label">aplikacje mobilne</p>
-            </li>
-            <li class="offer__image">
-              <img
-                src="images/image(3).jpg"
-                width="370"
-                height="294"
-                alt="creative artist web design with working colour selection graphic tablet"
-              />
-              <p class="offer__label">rozwiązania graficzne</p>
-            </li>
-          </ul>
+      <!-- offer -->
+      <section class="container">
+        <h2 class="heading-offer">Czym się zajmujemy</h2>
+        <ul class="offer">
+          <li class="offer__image">
+            <img
+              src="images/image(1).jpg"
+              srcset="images/image(1).jpg"
+              width="370"
+              height="294"
+              alt="close up image programer working his desk office"
+            />
+            <p class="offer__label">aplikacje komputerowe</p>
+          </li>
+          <li class="offer__image">
+            <img
+              src="images/image(2).jpg"
+              width="370"
+              height="294"
+              alt="web ui designers are developing application smartphones team creators is working interface mobile phones"
+            />
+            <p class="offer__label">aplikacje mobilne</p>
+          </li>
+          <li class="offer__image">
+            <img
+              src="images/image(3).jpg"
+              width="370"
+              height="294"
+              alt="creative artist web design with working colour selection graphic tablet"
+            />
+            <p class="offer__label">rozwiązania graficzne</p>
+          </li>
+        </ul>
       </section>
-<!-- team -->
+      <!-- team -->
       <section class="section background">
         <div class="container">
           <h2 class="heading">Nasz zespół</h2>
@@ -392,104 +390,106 @@
           </ul>
         </div>
       </section>
-<!-- clients -->
+      <!-- clients -->
       <section class="section container">
-          <h2 class="heading">Nasi klienci</h2>
-          <ul class="client">
-            <li>
-              <div class="client__item">
-                <svg class="client__icon">
-                  <use
-                    href="./images/icons.svg#icon-logo1"
-                    width="41"
-                    height="47"
-                    x="64"
-                    y="25"
-                  ></use>
-                </svg>
-              </div>
-            </li>
-            <li>
-              <div class="client__item">
-                <svg class="client__icon">
-                  <use
-                    href="./images/icons.svg#icon-logo2"
-                    width="40"
-                    height="52"
-                    x="65"
-                    y="21"
-                  ></use>
-                </svg>
-              </div>
-            </li>
-            <li>
-              <div class="client__item">
-                <svg class="client__icon">
-                  <use
-                    href="./images/icons.svg#icon-logo3"
-                    width="44"
-                    height="41"
-                    x="62"
-                    y="25"
-                  ></use>
-                </svg>
-              </div>
-            </li>
-            <li>
-              <div class="client__item">
-                <svg class="client__icon">
-                  <use
-                    href="./images/icons.svg#icon-logo4"
-                    width="84"
-                    height="41"
-                    x="43"
-                    y="25"
-                  ></use>
-                </svg>
-              </div>
-            </li>
-            <li>
-              <div class="client__item">
-                <svg class="client__icon">
-                  <use
-                    href="./images/icons.svg#icon-logo5"
-                    width="63"
-                    height="45"
-                    x="54"
-                    y="23"
-                  ></use>
-                </svg>
-              </div>
-            </li>
-            <li>
-              <div class="client__item">
-                <svg class="client__icon">
-                  <use
-                    href="./images/icons.svg#icon-logo6"
-                    width="94"
-                    height="44"
-                    x="38"
-                    y="23"
-                  ></use>
-                </svg>
-              </div>
-            </li>
-          </ul>
+        <h2 class="heading">Nasi klienci</h2>
+        <ul class="client">
+          <li>
+            <div class="client__item">
+              <svg class="client__icon">
+                <use
+                  href="./images/icons.svg#icon-logo1"
+                  width="41"
+                  height="47"
+                  x="64"
+                  y="25"
+                ></use>
+              </svg>
+            </div>
+          </li>
+          <li>
+            <div class="client__item">
+              <svg class="client__icon">
+                <use
+                  href="./images/icons.svg#icon-logo2"
+                  width="40"
+                  height="52"
+                  x="65"
+                  y="21"
+                ></use>
+              </svg>
+            </div>
+          </li>
+          <li>
+            <div class="client__item">
+              <svg class="client__icon">
+                <use
+                  href="./images/icons.svg#icon-logo3"
+                  width="44"
+                  height="41"
+                  x="62"
+                  y="25"
+                ></use>
+              </svg>
+            </div>
+          </li>
+          <li>
+            <div class="client__item">
+              <svg class="client__icon">
+                <use
+                  href="./images/icons.svg#icon-logo4"
+                  width="84"
+                  height="41"
+                  x="43"
+                  y="25"
+                ></use>
+              </svg>
+            </div>
+          </li>
+          <li>
+            <div class="client__item">
+              <svg class="client__icon">
+                <use
+                  href="./images/icons.svg#icon-logo5"
+                  width="63"
+                  height="45"
+                  x="54"
+                  y="23"
+                ></use>
+              </svg>
+            </div>
+          </li>
+          <li>
+            <div class="client__item">
+              <svg class="client__icon">
+                <use
+                  href="./images/icons.svg#icon-logo6"
+                  width="94"
+                  height="44"
+                  x="38"
+                  y="23"
+                ></use>
+              </svg>
+            </div>
+          </li>
+        </ul>
       </section>
     </main>
-<!-- footer -->
+    <!-- footer -->
     <footer class="footer">
       <div class="container">
         <div class="footer-contact">
           <a href="./index.html" class="footer-contact__logo"
-            ><span class="footer-contact__logo footer-contact__logo--blue">Web</span>Studio</a
+            ><span class="footer-contact__logo footer-contact__logo--blue"
+              >Web</span
+            >Studio</a
           >
           <address class="address">
             m. Warszawa, Aleje Jerozolimskie 21
-            <a href="mailto:info@devstudio.com" class="contact"
+            <a href="mailto:info@devstudio.com" class="address__contact"
               >info@devstudio.com</a
             >
-            <a href="tel:+48111111111" class="contact"
+            <a href="tel:+48111111111" class="address__contact"
               >+48 111 111 111</a
             >
           </address>
@@ -582,9 +582,9 @@
       </div>
     </footer>
 
-    <!-- <div class="backdrop is-hidden" data-modal> -->
-      <!-- <div class="modal"> -->
-        <!-- <button type="button" class="modal__button" data-modal-close>
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button type="button" class="modal__button" data-modal-close>
           <svg class="modal__button-icon">
             <use
               href="./images/icons.svg#icon-close"
@@ -592,9 +592,9 @@
               height="11"
             ></use>
           </svg>
-        </button> -->
+        </button>
 
-        <!-- <div class="modal-form">
+        <div class="modal-form">
           <h3 class="form-title">Zostaw swoje dane w formularzu poniżej</h3>
           <form class="form" name="form">
             <div class="form__field">
@@ -679,14 +679,14 @@
                 </svg>
                 Oświadczam iż akceptuję
                 <a href="#" class="checkbox__link"><span>Regulamin</span></a> i
-                <a href="#" class="checkbox__link"><span>Politykę Prywatności.</span></a>
+                <a href="#" class="checkbox__link"
+                  ><span>Politykę Prywatności.</span></a
+                >
               </label>
             </div>
-            <button type="submit" class="form__button">
-              Wyślij
-            </button>
+            <button type="submit" class="form__button">Wyślij</button>
           </form>
-        </div> -->
+        </div>
       </div>
     </div>
 

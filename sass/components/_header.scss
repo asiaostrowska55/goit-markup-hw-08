@@ -1,4 +1,44 @@
 // mobile
+.contact {
+  display: none;
+}
+.header {
+  border-bottom: 1px solid getColor("border");
+  height: 100%;
+  width: 100%;
+  &__items {
+    @include flex;
+  }
+  &__list {
+    display: none;
+  }
+  &__contact {
+    display: none;
+    @include transition;
+    @include flex;
+    list-style: none;
+    margin-left: auto;
+    gap: 50px;
+  }
+}
+.logo {
+  @include font-style($weight: $font-bold);
+  @include transition;
+  font-family: "Raleway";
+  color: getColor("logo");
+  text-decoration: none;
+  padding: 24px 0 25px 15px;
+  font-size: getFont("web-mobile");
+  &--blue {
+    color: getColor("brand");
+  }
+  &:hover {
+    color: getColor("brand");
+  }
+  &:focus {
+    color: getColor("brand");
+  }
+}
 // .header {
 //   border-bottom: 1px solid getColor("border");
 //   height: 100%;

@@ -88,8 +88,26 @@
   padding: 20px 0 60px 0;
   list-style: none;
   gap: 9px;
+  &__contact {
+    @include transition;
+    @include font-style($weight: $font-medium, $spacing: 0.02em);
+    color: getColor("secondary");
+    font-size: getFont("regular");
+    text-decoration: none;
+    &:hover {
+      color: getColor("brand");
+    }
+  }
 }
-
+@media (min-width: 1200px) {
+  .address {
+    &__contact {
+      &:focus {
+        color: getColor("brand");
+      }
+    }
+  }
+}
 /* -- join us -- */
 .media-title {
   @include font-style($weight: $font-bold);
@@ -177,7 +195,15 @@
 //   list-style: none;
 //   gap: 9px;
 // }
-
+// @media (min-width: 1200px) {
+//   .address {
+//     &__contact {
+//       &:focus {
+//         color: getColor("brand");
+//       }
+//     }
+//   }
+// }
 // /* -- join us -- */
 // .media-title {
 //   @include font-style($weight: $font-bold);

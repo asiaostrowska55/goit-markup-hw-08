@@ -25,6 +25,7 @@ img {
   width: 100%;
   height: auto;
 }
+// odzielny kontakt w footerze i headerze
 .contact {
   @include transition;
   @include font-style($weight: $font-medium, $spacing: 0.02em);
@@ -51,7 +52,11 @@ img {
 *::after {
   box-sizing: border-box;
 }
-@media screen and (min-width: 1200px) {
+.section {
+  padding: 60px 15px;
+}
+
+@media (min-width: 1200px) {
   .section {
     padding: 94px 0;
   }
@@ -63,7 +68,7 @@ img {
   padding-bottom: 50px;
   padding-top: 60px;
 }
-@media screen and (min-width: 1200px) {
+@media (min-width: 1200px) {
   .heading {
     @include flex;
     @include font-style($weight: $font-bold);
