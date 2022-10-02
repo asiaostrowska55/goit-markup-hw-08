@@ -22,13 +22,16 @@
   &__name {
     @include font-style($weight: $font-medium);
     font-size: getFont("team");
-    padding: 30px 189px 10px;
+    padding: 30px 118px 10px;
+    text-align: center;
   }
   &__job {
     @include font-style($weight: $font-normal);
     font-size: getFont("team");
     color: getColor("secondary");
     justify-content: center;
+    text-align: center;
+    padding-bottom: 16px;
   }
   &__icon {
     @include flex;
@@ -50,19 +53,8 @@
     }
   }
 }
+// tablet
 
-.prod-design {
-  padding: 10px 70px 16px 70px;
-}
-.front-devel {
-  padding: 10px 61px 16px 62px;
-}
-.marketing {
-  padding: 10px 97px 16px;
-}
-.ui-design {
-  padding: 10px 91px 16px 92px;
-}
 // .team {
 //   @include flex;
 //   @include font-style($weight: $font-bold, $height: 1.66);
@@ -76,7 +68,11 @@
 //     border-radius: $radius;
 //     box-shadow: getShadow("team");
 //   }
-//   &__name {
+// &__image {
+//   width: 450px;
+//   height: 460px;
+// }
+// //   &__name {
 //     @include font-style($weight: $font-medium);
 //     font-size: getFont("team");
 //     padding: 30px 99px 10px;
@@ -106,17 +102,4 @@
 //       margin-right: 10px;
 //     }
 //   }
-// }
-
-// .prod-design {
-//   padding: 10px 70px 16px 70px;
-// }
-// .front-devel {
-//   padding: 10px 61px 16px 62px;
-// }
-// .marketing {
-//   padding: 10px 97px 16px;
-// }
-// .ui-design {
-//   padding: 10px 91px 16px 92px;
 // }

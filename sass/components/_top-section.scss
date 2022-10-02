@@ -36,9 +36,6 @@
   padding: 60px 15px;
   margin: 0;
   gap: 30px;
-  &__item {
-    flex-basis: calc((100% - 0px) / 1);
-  }
   &__icon {
     display: flex;
     justify-content: center;

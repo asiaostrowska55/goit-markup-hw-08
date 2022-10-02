@@ -1,8 +1,11 @@
+//mobile
 .client {
   @include flex;
   list-style: none;
   gap: 30px;
   padding-left: 0;
+  padding-bottom: 60px;
+  flex-wrap: wrap;
   &__icon {
     @include icon;
     @include transition;
@@ -12,11 +15,35 @@
     border-radius: $radius;
     justify-content: center;
     &:hover {
+      @include transition;
       fill: getColor("brand");
       border-color: getColor("brand");
     }
   }
   &__item {
     @include flex;
+    flex-basis: calc((100% - 0px) / 2);
   }
 }
+// .client {
+//   @include flex;
+//   list-style: none;
+//   gap: 30px;
+//   padding-left: 0;
+//   &__icon {
+//     @include icon;
+//     @include transition;
+//     width: 170px;
+//     height: 92px;
+//     border: $btn-border;
+//     border-radius: $radius;
+//     justify-content: center;
+//     &:hover {
+//       fill: getColor("brand");
+//       border-color: getColor("brand");
+//     }
+//   }
+//   &__item {
+//     @include flex;
+//   }
+// }

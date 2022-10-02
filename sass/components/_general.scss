@@ -4,7 +4,6 @@ body {
   margin: 0;
 }
 .container {
-  min-width: 320px;
   max-width: 100%;
   margin: 0;
 }
@@ -23,6 +22,8 @@ body {
 img {
   display: block;
   margin-right: 0;
+  width: 100%;
+  height: auto;
 }
 .contact {
   @include transition;
@@ -61,14 +62,6 @@ img {
   font-size: getFont("titles");
   padding-bottom: 50px;
   padding-top: 60px;
-}
-@media screen and (min-width: 768px) {
-  .heading {
-    @include flex;
-    @include font-style($weight: $font-bold);
-    font-size: getFont("titles");
-    padding-bottom: 50px;
-  }
 }
 @media screen and (min-width: 1200px) {
   .heading {
