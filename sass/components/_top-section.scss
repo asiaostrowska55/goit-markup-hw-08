@@ -1,9 +1,10 @@
+//mobile
 .title {
   background-color: getColor("dark-bg");
   justify-content: center;
   height: 600px;
-  max-width: 1600px;
-  background-image: url(../images/background-header.jpg);
+  max-width: 100%;
+  background-image: url(/images/background.jpg);
   background-size: cover;
   margin: 0 auto;
   &__label {
@@ -19,38 +20,59 @@
   }
 }
 
-.btn {
-  @include index-btn;
-  @include transition;
-  line-height: 1.88;
-  margin: 0 auto;
-  text-align: center;
-  &:hover {
-    @include index-btn-hover;
-  }
-}
+// .title {
+//   background-color: getColor("dark-bg");
+//   justify-content: center;
+//   height: 600px;
+//   max-width: 1600px;
+//   background-image: url(../images/background-header.jpg);
+//   background-size: cover;
+//   margin: 0 auto;
+//   &__label {
+//     @include flex;
+//     @include font-style($weight: $font-black, $spacing: 0.06em);
+//     font-size: getFont("label");
+//     color: getColor("light");
+//     padding: 200px 0 30px;
+//   }
+//   &__btn {
+//     @include flex;
+//     padding-bottom: 200px;
+//   }
+// }
 
-.list {
-  display: flex;
-  list-style: none;
-  padding-left: 0px;
-  margin: 0;
-  gap: 30px;
-  &__item {
-    @include flex;
-    width: 270px;
-    height: 120px;
-    background-color: getColor("light-bg");
-    margin-bottom: 30px;
-  }
-  &__label {
-    @include font-style($weight: $font-bold);
-    font-size: getFont("regular");
-    padding-bottom: 10px;
-  }
-  &__paragraph {
-    @include font-style($weight: $font-normal, $height: 1.71);
-    font-size: getFont("regular");
-    color: getColor("secondary");
-  }
-}
+// .btn {
+//   @include index-btn;
+//   @include transition;
+//   line-height: 1.88;
+//   margin: 0 auto;
+//   text-align: center;
+//   &:hover {
+//     @include index-btn-hover;
+//   }
+// }
+
+// .list {
+//   display: flex;
+//   list-style: none;
+//   padding-left: 0px;
+//   margin: 0;
+//   gap: 30px;
+//   &__item {
+//     @include flex;
+//     width: 270px;
+//     height: 120px;
+//     background-color: getColor("light-bg");
+//     margin-bottom: 30px;
+//   }
+//   &__label {
+//     @include font-style($weight: $font-bold);
+//     font-size: getFont("regular");
+//     padding-bottom: 10px;
+//   }
+//   &__paragraph {
+//     @include font-style($weight: $font-normal, $height: 1.71);
+//     font-size: getFont("regular");
+//     color: getColor("secondary");
+//   }
+// }

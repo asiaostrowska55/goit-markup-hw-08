@@ -1,9 +1,11 @@
 .offer {
+  display: none;
   @include flex;
   list-style: none;
   padding: 0 15px;
   gap: 30px;
   &__image {
+    display: none;
     position: relative;
     overflow: hidden;
     & > .offer__label {
@@ -18,6 +20,7 @@
     }
   }
   &__label {
+    display: none;
     text-transform: uppercase;
     color: getColor("light");
     font-size: getFont("regular");
