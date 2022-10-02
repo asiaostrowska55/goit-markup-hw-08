@@ -4,14 +4,9 @@ body {
   margin: 0;
 }
 .container {
+  min-width: 320px;
   max-width: 100%;
   margin: 0;
-}
-@media screen and (min-width: 480px) {
-  .container {
-    max-width: 480px;
-    margin: 0;
-  }
 }
 @media screen and (min-width: 768px) {
   .container {
@@ -55,12 +50,31 @@ img {
 *::after {
   box-sizing: border-box;
 }
-.section {
-  padding: 94px 0;
+@media screen and (min-width: 1200px) {
+  .section {
+    padding: 94px 0;
+  }
 }
 .heading {
   @include flex;
   @include font-style($weight: $font-bold);
   font-size: getFont("titles");
   padding-bottom: 50px;
+  padding-top: 60px;
+}
+@media screen and (min-width: 768px) {
+  .heading {
+    @include flex;
+    @include font-style($weight: $font-bold);
+    font-size: getFont("titles");
+    padding-bottom: 50px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .heading {
+    @include flex;
+    @include font-style($weight: $font-bold);
+    font-size: getFont("titles");
+    padding-bottom: 50px;
+  }
 }

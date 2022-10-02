@@ -1,23 +1,28 @@
 .background {
   background: getColor("light-bg");
+  max-width: 100%;
 }
+//mobile
 .team {
-  @include flex;
   @include font-style($weight: $font-bold, $height: 1.66);
   font-size: getFont("titles");
+  display: block;
+  justify-content: center;
+  align-items: center;
   list-style: none;
-  padding-left: 15px;
+  padding: 30px 15px;
   gap: 30px;
   &__figure {
     margin: 0;
     background-color: getColor("light");
     border-radius: $radius;
     box-shadow: getShadow("team");
+    margin-bottom: 30px;
   }
   &__name {
     @include font-style($weight: $font-medium);
     font-size: getFont("team");
-    padding: 30px 99px 10px;
+    padding: 30px 189px 10px;
   }
   &__job {
     @include font-style($weight: $font-normal);
@@ -58,3 +63,60 @@
 .ui-design {
   padding: 10px 91px 16px 92px;
 }
+// .team {
+//   @include flex;
+//   @include font-style($weight: $font-bold, $height: 1.66);
+//   font-size: getFont("titles");
+//   list-style: none;
+//   padding-left: 15px;
+//   gap: 30px;
+//   &__figure {
+//     margin: 0;
+//     background-color: getColor("light");
+//     border-radius: $radius;
+//     box-shadow: getShadow("team");
+//   }
+//   &__name {
+//     @include font-style($weight: $font-medium);
+//     font-size: getFont("team");
+//     padding: 30px 99px 10px;
+//   }
+//   &__job {
+//     @include font-style($weight: $font-normal);
+//     font-size: getFont("team");
+//     color: getColor("secondary");
+//     justify-content: center;
+//   }
+//   &__icon {
+//     @include flex;
+//     padding-bottom: 30px;
+//   }
+//   &__icon-media {
+//     @include transition;
+//     @include icon;
+//     width: 44px;
+//     height: 44px;
+//     border-radius: 50px;
+//     &:hover {
+//       @include transition;
+//       fill: getColor("light");
+//       background-color: getColor("brand");
+//     }
+//     &:not(:last-child) {
+//       margin-right: 10px;
+//     }
+//   }
+// }
+
+// .prod-design {
+//   padding: 10px 70px 16px 70px;
+// }
+// .front-devel {
+//   padding: 10px 61px 16px 62px;
+// }
+// .marketing {
+//   padding: 10px 97px 16px;
+// }
+// .ui-design {
+//   padding: 10px 91px 16px 92px;
+// }
