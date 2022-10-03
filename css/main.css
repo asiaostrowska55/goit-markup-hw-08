@@ -9,18 +9,6 @@ body {
   margin: 0;
 }
 
-@media screen and (min-width: 768px) {
-  .container {
-    max-width: 768px;
-    margin: 0;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .container {
-    max-width: 1200px;
-    margin: 0;
-  }
-}
 img {
   display: block;
   margin-right: 0;
@@ -68,7 +56,7 @@ img {
 
 @media (min-width: 1200px) {
   .section {
-    padding: 94px 0;
+    padding: 94px 15px;
   }
 }
 .heading {
@@ -488,12 +476,15 @@ img {
   color: #757575;
 }
 
-@media (min-width: 768px) {
-  .project {
-    justify-content: space-between;
-  }
+@media screen and (min-width: 768px) {
   .project__item {
     flex-basis: calc((100% - 30px) / 2);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .project__item {
+    padding-left: 15px;
+    flex-basis: calc((100% - 60px) / 3);
   }
 }
 .button {
@@ -528,26 +519,7 @@ img {
   box-shadow: 1px 4px 3px 0px rgb(178, 178, 179);
 }
 
-@media (min-width: 768px) {
-  .button {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    margin: 0;
-    flex-wrap: wrap;
-    margin-bottom: 51px;
-  }
-}
 @media (min-width: 1200px) {
-  .button {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    margin: 0;
-    margin-bottom: 51px;
-  }
   .button__label:focus {
     color: #ffffff;
     background-color: #2196f3;
