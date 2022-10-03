@@ -15,46 +15,13 @@
   }
   &__form-label {
     @include font-style($weight: $font-bold);
+    display: flex;
+    justify-content: center;
     color: getColor("light");
     font-size: getFont("regular");
     text-transform: uppercase;
     padding-top: 60px;
   }
-}
-.newsletter {
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
-  justify-content: center;
-  &__input {
-    border: 1px solid getColor("form-btn-bg");
-    border-radius: $radius;
-    background: transparent;
-    max-width: 450px;
-    width: 100%;
-    align-self: center;
-    height: 50px;
-    padding-left: 16px;
-    color: getColor("light");
-  }
-  &__button {
-    @include flex;
-    @include index-btn;
-    @include transition;
-    margin-right: 0;
-    line-height: 1.88;
-    text-align: center;
-    align-self: center;
-    &:hover {
-      @include index-btn-hover;
-    }
-  }
-}
-.send-icon {
-  fill: getColor("light");
-  height: 24px;
-  width: 24px;
-  margin-left: 24px;
 }
 .footer-contact {
   display: flex;
@@ -99,15 +66,6 @@
     }
   }
 }
-@media (min-width: 1200px) {
-  .address {
-    &__contact {
-      &:focus {
-        color: getColor("brand");
-      }
-    }
-  }
-}
 /* -- join us -- */
 .media-title {
   @include font-style($weight: $font-bold);
@@ -138,129 +96,110 @@
     }
   }
 }
-
-// .footer {
-//   display: flex;
-//   background-color: getColor("dark-bg");
-//   height: 252px;
-//   justify-content: center;
-//   & > .container {
-//     display: flex;
-//     gap: 70px;
-//   }
-//   &__form {
-//     display: flex;
-//     flex-direction: column;
-//     padding-top: 72px;
-//     gap: 20px;
-//   }
-//   &__form-label {
-//     @include font-style($weight: $font-bold);
-//     display: flex;
-//     color: getColor("light");
-//     font-size: getFont("regular");
-//     text-transform: uppercase;
-//   }
-// }
-// .footer-contact {
-//   padding-top: 60px;
-//   padding-left: 15px;
-//   &__logo {
-//     @include transition;
-//     @include font-style($weight: $font-bold);
-//     font-family: "Raleway";
-//     color: getColor("light");
-//     font-size: getFont("webstudio");
-//     text-decoration: none;
-//     &:hover {
-//       color: getColor("brand");
-//     }
-//     &:focus {
-//       color: getColor("brand");
-//     }
-//   }
-//   &__logo--blue {
-//     color: getColor("brand");
-//   }
-// }
-
-// .address {
-//   @include font-style($weight: $font-normal, $height: 1.24);
-//   font-size: getFont("regular");
-//   color: getColor("light");
-//   font-style: normal;
-//   display: flex;
-//   flex-direction: column;
-//   padding: 20px 0 60px 0;
-//   list-style: none;
-//   gap: 9px;
-// }
-// @media (min-width: 1200px) {
-//   .address {
-//     &__contact {
-//       &:focus {
-//         color: getColor("brand");
-//       }
-//     }
-//   }
-// }
-// /* -- join us -- */
-// .media-title {
-//   @include font-style($weight: $font-bold);
-//   color: getColor("light");
-//   font-size: getFont("regular");
-//   text-transform: uppercase;
-//   padding: 72px 0 16px 0;
-// }
-// .media {
-//   @include flex;
-//   list-style: none;
-//   gap: 10px;
-//   padding-left: 0;
-//   &__link {
-//     @include flex;
-//   }
-//   &__link-icon {
-//     @include transition;
-//     width: 44px;
-//     height: 44px;
-//     border-radius: 50px;
-//     fill: getColor("light");
-//     background: getColor("icon-bg");
-//     cursor: pointer;
-//     &:hover {
-//       fill: getColor("light");
-//       background-color: getColor("brand");
-//     }
-//   }
-// }
-
-// .newsletter {
-//   display: inline-flex;
-//   gap: 12px;
-//   &__input {
-//     border: 1px solid getColor("form-btn-bg");
-//     border-radius: $radius;
-//     background: transparent;
-//     width: 358px;
-//     height: 50px;
-//     padding-left: 16px;
-//     color: getColor("light");
-//   }
-//   &__button {
-//     @include flex;
-//     @include index-btn;
-//     @include transition;
-//     line-height: 1.88;
-//     text-align: center;
-//     &:hover {
-//       @include index-btn-hover;
-//     }
-//   }
-// }
-// .send-icon {
-//   fill: getColor("light");
-//   height: 24px;
-//   width: 24px;
-//   margin-left: 24px;
-// }
+.newsletter {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  justify-content: center;
+  &__input {
+    border: 1px solid getColor("form-btn-bg");
+    border-radius: $radius;
+    background: transparent;
+    max-width: 450px;
+    width: 100%;
+    align-self: center;
+    height: 50px;
+    padding-left: 16px;
+    color: getColor("light");
+  }
+  &__button {
+    @include flex;
+    @include index-btn;
+    @include transition;
+    margin-right: 0;
+    line-height: 1.88;
+    text-align: center;
+    align-self: center;
+    &:hover {
+      @include index-btn-hover;
+    }
+  }
+}
+.send-icon {
+  fill: getColor("light");
+  height: 24px;
+  width: 24px;
+  margin-left: 24px;
+}
+// tablet
+@media (min-width: 768px) and (max-width: 1200px) {
+  .footer {
+    height: 463px;
+    &__tablet {
+      display: flex;
+      flex-direction: row;
+      gap: 70px;
+    }
+    &__form-label {
+      padding-top: 0;
+    }
+  }
+  .footer-contact,
+  .footer-media {
+    margin: 0 auto;
+  }
+  .newsletter {
+    display: inline-flex;
+    &__input {
+      border: 1px solid getColor("form-btn-bg");
+      border-radius: $radius;
+      background: transparent;
+    }
+  }
+}
+//desktop
+@media (min-width: 1200px) {
+  .address {
+    &__contact {
+      &:focus {
+        color: getColor("brand");
+      }
+    }
+  }
+  .footer {
+    flex-direction: row;
+    height: 252px;
+    &__tablet {
+      display: flex;
+      flex-direction: row;
+      gap: 70px;
+    }
+    & > .container {
+      display: flex;
+      gap: 70px;
+      margin: 0 auto;
+    }
+    &__form-label {
+      display: flex;
+      align-self: baseline;
+      padding-top: 12px;
+    }
+  }
+  .footer-contact {
+    padding-top: 60px;
+    text-align: left;
+  }
+  /* -- join us -- */
+  .media-title {
+    padding: 12px 0 16px 0;
+    align-self: baseline;
+  }
+  .newsletter {
+    display: inline-flex;
+    flex-direction: row;
+    &__input {
+      width: 358px;
+      height: 50px;
+    }
+  }
+}
