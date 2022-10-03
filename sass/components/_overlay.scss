@@ -7,7 +7,7 @@
 }
 
 .overlay {
-  position: absolute;
+  position: relative;
   width: 100%;
   height: 294px;
   top: 0;
@@ -18,6 +18,7 @@
     position: absolute;
     background-color: getColor("overlay-bg");
     transform: $move-all;
+    height: 100%;
   }
 }
 .project__figure:hover .overlay__text {

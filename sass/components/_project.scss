@@ -8,16 +8,15 @@
     display: block;
     list-style: none;
     background-color: getColor("light");
-    max-width: 450px;
     cursor: pointer;
-    flex-basis: calc((100% - 0px) / 1);
     &:hover {
       box-shadow: getShadow("project");
     }
   }
   &__figure {
     position: relative;
-    display: block;
+    display: flex;
+    flex-direction: column;
     margin: 0px;
     overflow: hidden;
     &:hover .overlay__text {
@@ -40,13 +39,22 @@
     color: getColor("secondary");
   }
 }
+// tablet
+@media (min-width: 768px) {
+  .project {
+    justify-content: space-between;
+    &__item {
+      flex-basis: calc((100% - 30px) / 2);
+    }
+  }
+}
 // .project {
 //   @include flex($align-t: left);
 //   gap: 30px;
 //   flex-wrap: wrap;
 //   list-style: none;
 //   padding-left: 15px;
-//   flex-basis: calc((100% - 2 * 30px) / 3);
+//   flex-basis: calc((100% - 2 * 30px) / 2);
 //   &__item {
 //     display: block;
 //     list-style: none;

@@ -24,3 +24,14 @@
     }
   }
 }
+@media (min-width: 768px) {
+  .mobile {
+    &__toggle {
+      display: none;
+      // position: relative; ?? lub na kontaktach absolute
+    }
+    &__icon {
+      display: none;
+    }
+  }
+}
