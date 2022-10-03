@@ -22,10 +22,18 @@
   }
   &__item {
     @include flex;
-    flex-basis: calc((100% - 0px) / 2);
+    flex-basis: calc((100% - 30px) / 2);
   }
 }
-// .client {
+//tablet
+@media screen and (min-width: 768px) {
+  .client {
+    &__item {
+      flex-basis: calc((100% - 60px) / 3);
+    }
+  }
+}
+//
 //   @include flex;
 //   list-style: none;
 //   gap: 30px;
