@@ -234,36 +234,35 @@ img {
     gap: 60px;
   }
 }
-@media (max-width: 768px) {
-  .mobile__toggle {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    margin: 0;
-    position: absolute;
-    top: 22px;
-    right: 22px;
-    width: 24px;
-    height: 24px;
-    padding: 0;
-    background: transparent;
-    border: none;
-  }
-  .mobile__icon {
-    fill: #212121;
-    cursor: pointer;
-    width: 24px;
-    height: 24px;
-    top: 22px;
-    right: 22px;
-  }
-  .mobile__icon:hover {
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    fill: #2196f3;
-  }
+.mobile__toggle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 0;
+  position: absolute;
+  top: 22px;
+  right: 22px;
+  width: 24px;
+  height: 24px;
+  padding: 0;
+  background: transparent;
+  border: none;
 }
+.mobile__icon {
+  fill: #212121;
+  cursor: pointer;
+  width: 24px;
+  height: 24px;
+  top: 22px;
+  right: 22px;
+}
+.mobile__icon:hover {
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  fill: #2196f3;
+}
+
 @media (min-width: 768px) {
   .mobile__toggle {
     display: none;

@@ -576,7 +576,7 @@
         </div>
       </div>
     </footer>
-
+    <!-- modal window -->
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button type="button" class="modal__button" data-modal-close>
@@ -684,7 +684,62 @@
         </div>
       </div>
     </div>
-
+    <!-- mobile menu -->
+    <div class="mobile-menu js-menu-container" id="mobile-menu">
+      <button class="mobile-menu__close js-close-menu">
+        <svg width="18.7" height="18.7">
+          <use xlink:href="./images/icon.svg#close"></use>
+        </svg>
+      </button>
+      <ul class="mobile-list">
+        <li>
+          <a
+            href="./index.html"
+            rel="noopener noreferrer"
+            class="mobile-list__item mobile-list__item--active"
+            >Agencja</a
+          >
+        </li>
+        <li>
+          <a
+            href="./portfolio.html"
+            rel="noopener noreferrer"
+            class="mobile-list__item"
+            >Portfolio</a
+          >
+        </li>
+        <li>
+          <a href="#" class="mobile-list__item">Kontakt</a>
+        </li>
+      </ul>
+      <div class="mobile-contact">
+        <a
+          class="mobile-contact__contact"
+          href="tel:+48111111111"
+          rel="noopener noreferrer"
+          >+48 111 111 111</a
+        >
+        <a
+          class="mobile-contact__contact"
+          href="mailto:info@devstudio.com"
+          rel="noopener noreferrer"
+          >info@devstudio.com</a
+        >
+      </div>
+      <ul class="mobile-link">
+        <li class="mobile-link__social"><a class="" href="">Instagram</a></li>
+        <li class="mobile-link__social"><a class="" href="">Twitter</a></li>
+        <li class="mobile-link__social"><a class="" href="">Facebook</a></li>
+        <li class="mobile-link__social"><a class="" href="">LinkedIn</a></li>
+      </ul>
+    </div>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="js/mobile-menu.js"></script>
     <script src="./js/modal.js"></script>
   </body>
 </html>

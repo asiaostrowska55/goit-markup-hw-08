@@ -1,34 +1,46 @@
-@media (max-width: 768px) {
-  .mobile {
-    &__toggle {
-      @include flex;
-      position: absolute;
-      top: 22px;
-      right: 22px;
-      width: 24px;
-      height: 24px;
-      padding: 0;
-      background: transparent;
-      border: none;
-    }
-    &__icon {
-      @include icon($fill: getColor("primary"));
-      width: 24px;
-      height: 24px;
-      top: 22px;
-      right: 22px;
-      &:hover {
-        @include transition;
-        fill: getColor("brand");
-      }
+//mobile
+.mobile {
+  &__toggle {
+    @include flex;
+    position: absolute;
+    top: 22px;
+    right: 22px;
+    width: 24px;
+    height: 24px;
+    padding: 0;
+    background: transparent;
+    border: none;
+  }
+  &__icon {
+    @include icon($fill: getColor("primary"));
+    width: 24px;
+    height: 24px;
+    top: 22px;
+    right: 22px;
+    &:hover {
+      @include transition;
+      fill: getColor("brand");
     }
   }
 }
+// .mobile-menu {
+//   &__close {}
+// }
+// .mobile-list {
+//   &__item {}
+//   &____item--active {}
+// }
+// .mobile-contact {
+// &__contact {}
+// }
+// .mobile-link {
+//   &__social
+// }
+//tablet+desktop
 @media (min-width: 768px) {
   .mobile {
     &__toggle {
       display: none;
-      // position: relative; ?? lub na kontaktach absolute
     }
     &__icon {
       display: none;
