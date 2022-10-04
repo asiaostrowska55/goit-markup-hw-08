@@ -34,7 +34,7 @@
   display: block;
   list-style: none;
   padding: 60px 15px;
-  margin: 0;
+  margin: 0 auto;
   gap: 30px;
   &__icon {
     display: flex;
@@ -60,60 +60,41 @@
   }
 }
 // tablet
-
-// .title {
-//   background-color: getColor("dark-bg");
-//   justify-content: center;
-//   height: 600px;
-//   max-width: 1600px;
-//   background-image: url(/images/bg-mobile.jpg);
-//   background-size: cover;
-//   margin: 0 auto;
-//   &__label {
-//     @include flex;
-//     @include font-style($weight: $font-black, $spacing: 0.06em);
-//     font-size: getFont("label");
-//     color: getColor("light");
-//     padding: 200px 0 30px;
-//   }
-//   &__btn {
-//     @include flex;
-//     padding-bottom: 200px;
-//   }
-// }
-
-// .btn {
-//   @include index-btn;
-//   @include transition;
-//   line-height: 1.88;
-//   margin: 0 auto;
-//   text-align: center;
-//   &:hover {
-//     @include index-btn-hover;
-//   }
-// }
-
-// .list {
-//   display: flex;
-//   list-style: none;
-//   padding-left: 0px;
-//   margin: 0;
-//   gap: 30px;
-//   &__item {
-//     @include flex;
-//     width: 270px;
-//     height: 120px;
-//     background-color: getColor("light-bg");
-//     margin-bottom: 30px;
-//   }
-//   &__label {
-//     @include font-style($weight: $font-bold);
-//     font-size: getFont("regular");
-//     padding-bottom: 10px;
-//   }
-//   &__paragraph {
-//     @include font-style($weight: $font-normal, $height: 1.71);
-//     font-size: getFont("regular");
-//     color: getColor("secondary");
-//   }
-// }
+@media screen and (min-width: 768px) {
+  .list {
+    display: flex;
+    flex-wrap: wrap;
+    &__item {
+      flex-basis: calc((100% - 30px) / 2);
+    }
+  }
+}
+//desktop
+@media (min-width: 1200px) {
+  .title {
+    height: 600px;
+    max-width: 1600px;
+    &__label {
+      font-size: getFont("label");
+      padding: 200px 0 30px;
+    }
+    &__btn {
+      padding-bottom: 200px;
+    }
+  }
+  .list {
+    display: flex;
+    padding-left: 0px;
+    flex-wrap: nowrap;
+    &__item {
+      @include flex;
+      flex-direction: column;
+    }
+    &__label {
+      align-self: baseline;
+    }
+    &__paragraph {
+      text-align: left;
+    }
+  }
+}

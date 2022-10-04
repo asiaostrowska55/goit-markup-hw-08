@@ -243,7 +243,7 @@ img {
   display: block;
   list-style: none;
   padding: 60px 15px;
-  margin: 0;
+  margin: 0 auto;
   gap: 30px;
 }
 .list__icon {
@@ -275,6 +275,47 @@ img {
   margin-bottom: 30px;
 }
 
+@media screen and (min-width: 768px) {
+  .list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .list__item {
+    flex-basis: calc((100% - 30px) / 2);
+  }
+}
+@media (min-width: 1200px) {
+  .title {
+    height: 600px;
+    max-width: 1600px;
+  }
+  .title__label {
+    font-size: 44px;
+    padding: 200px 0 30px;
+  }
+  .title__btn {
+    padding-bottom: 200px;
+  }
+  .list {
+    display: flex;
+    padding-left: 0px;
+    flex-wrap: nowrap;
+  }
+  .list__item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 0;
+    flex-direction: column;
+  }
+  .list__label {
+    align-self: baseline;
+  }
+  .list__paragraph {
+    text-align: left;
+  }
+}
 .heading-offer {
   display: none;
 }
