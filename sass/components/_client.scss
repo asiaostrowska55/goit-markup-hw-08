@@ -4,15 +4,23 @@
   list-style: none;
   gap: 30px;
   padding-left: 0;
-  padding-bottom: 60px;
   flex-wrap: wrap;
+  &__item {
+    @include flex;
+    flex-basis: calc((100% - 30px) / 2);
+    border: $btn-border;
+    border-radius: $radius;
+    &:hover {
+      @include transition;
+      fill: getColor("brand");
+      border-color: getColor("brand");
+    }
+  }
   &__icon {
     @include icon;
     @include transition;
-    width: 100%;
+    width: 160px;
     height: 92px;
-    border: $btn-border;
-    border-radius: $radius;
     justify-content: center;
     &:hover {
       @include transition;
@@ -20,16 +28,6 @@
       border-color: getColor("brand");
     }
   }
-  &__item {
-    @include flex;
-    flex-basis: calc((100% - 30px) / 2);
-  }
-}
-.icon {
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  margin: 0 auto;
 }
 //tablet
 @media screen and (min-width: 768px) {
@@ -37,6 +35,12 @@
     &__item {
       flex-basis: calc((100% - 60px) / 3);
     }
+  }
+}
+//desktop
+@media screen and (min-width: 1200px) {
+  .client {
+    flex-wrap: nowrap;
   }
 }
 //

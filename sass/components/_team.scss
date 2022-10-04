@@ -67,9 +67,6 @@
 @media (min-width: 1200px) {
   .team {
     @include flex;
-    width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
     flex-wrap: nowrap;
     &__name {
       padding: 30px 99px 10px;

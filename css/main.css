@@ -5,10 +5,16 @@ body {
 }
 
 .container {
-  max-width: 100%;
+  width: 100%;
   margin: 0;
 }
 
+@media (min-width: 1200px) {
+  .container {
+    width: 1200px;
+    margin: 0 auto;
+  }
+}
 img {
   display: block;
   margin-right: 0;
@@ -286,9 +292,8 @@ img {
     padding-bottom: 200px;
   }
   .list {
-    display: flex;
-    padding-left: 0px;
     flex-wrap: nowrap;
+    padding: 0;
   }
   .list__item {
     display: flex;
@@ -305,45 +310,66 @@ img {
     text-align: left;
   }
 }
-.heading-offer {
-  display: none;
+@media screen and (max-width: 1200px) {
+  .heading-offer {
+    display: none;
+  }
+  .offer {
+    display: none;
+  }
+  .offer__image {
+    display: none;
+  }
+  .offer__label {
+    display: none;
+  }
 }
-
-.offer {
-  display: none;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  margin: 0;
-  list-style: none;
-  padding: 0 15px;
-  gap: 30px;
+@media screen and (min-width: 1201px) {
+  .heading-offer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 0;
+    line-height: 1.16;
+    font-weight: 700;
+    letter-spacing: 0.03em;
+    margin: 0;
+    font-size: 36px;
+    padding-bottom: 50px;
+  }
+  .offer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 0;
+    list-style: none;
+    padding: 0 15px;
+    gap: 30px;
+  }
+  .offer__image {
+    position: relative;
+    overflow: hidden;
+  }
+  .offer__image > .offer__label {
+    position: absolute;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    margin: 0;
+    padding-top: 27px;
+    padding-bottom: 27px;
+    background-color: rgba(47, 48, 58, 0.8);
+  }
+  .offer__label {
+    text-transform: uppercase;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 700;
+    text-align: center;
+  }
 }
-.offer__image {
-  display: none;
-  position: relative;
-  overflow: hidden;
-}
-.offer__image > .offer__label {
-  position: absolute;
-  right: 0;
-  left: 0;
-  bottom: 0;
-  margin: 0;
-  padding-top: 27px;
-  padding-bottom: 27px;
-  background-color: rgba(47, 48, 58, 0.8);
-}
-.offer__label {
-  display: none;
-  text-transform: uppercase;
-  color: #ffffff;
-  font-size: 14px;
-  font-weight: 700;
-  text-align: center;
-}
-
 .background {
   background: #f5f4fa;
   max-width: 100%;
@@ -432,9 +458,6 @@ img {
     align-items: center;
     text-align: center;
     margin: 0;
-    width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
     flex-wrap: nowrap;
   }
   .team__name {
@@ -450,25 +473,7 @@ img {
   list-style: none;
   gap: 30px;
   padding-left: 0;
-  padding-bottom: 60px;
   flex-wrap: wrap;
-}
-.client__icon {
-  fill: #afb1b8;
-  cursor: pointer;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  width: 100%;
-  height: 92px;
-  border: 1px solid #9c9c9c;
-  border-radius: 4px;
-  justify-content: center;
-}
-.client__icon:hover {
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  fill: #2196f3;
-  border-color: #2196f3;
 }
 .client__item {
   display: flex;
@@ -477,18 +482,39 @@ img {
   text-align: center;
   margin: 0;
   flex-basis: calc((100% - 30px) / 2);
+  border: 1px solid #9c9c9c;
+  border-radius: 4px;
 }
-
-.icon {
+.client__item:hover {
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  fill: #2196f3;
+  border-color: #2196f3;
+}
+.client__icon {
+  fill: #afb1b8;
+  cursor: pointer;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  width: 160px;
+  height: 92px;
   justify-content: center;
-  align-items: center;
-  text-align: center;
-  margin: 0 auto;
+}
+.client__icon:hover {
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  fill: #2196f3;
+  border-color: #2196f3;
 }
 
 @media screen and (min-width: 768px) {
   .client__item {
     flex-basis: calc((100% - 60px) / 3);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .client {
+    flex-wrap: nowrap;
   }
 }
 .project {
