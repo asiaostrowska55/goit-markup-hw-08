@@ -9,7 +9,7 @@
   &__icon {
     @include icon;
     @include transition;
-    width: 170px;
+    width: 100%;
     height: 92px;
     border: $btn-border;
     border-radius: $radius;
@@ -24,6 +24,12 @@
     @include flex;
     flex-basis: calc((100% - 30px) / 2);
   }
+}
+.icon {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 0 auto;
 }
 //tablet
 @media screen and (min-width: 768px) {

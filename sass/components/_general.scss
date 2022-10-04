@@ -51,15 +51,11 @@ img {
 .heading {
   @include flex;
   @include font-style($weight: $font-bold);
-  font-size: getFont("titles");
-  padding-bottom: 50px;
-  padding-top: 60px;
+  font-size: getFont("titles-mobile");
+  padding-bottom: 30px;
 }
-@media (min-width: 1200px) {
+@media (min-width: 768px) {
   .heading {
-    @include flex;
-    @include font-style($weight: $font-bold);
     font-size: getFont("titles");
-    padding-bottom: 50px;
   }
 }
