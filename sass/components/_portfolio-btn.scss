@@ -1,3 +1,4 @@
+//mobile + tablet
 .button {
   @include transition;
   display: flex;
@@ -24,6 +25,13 @@
     }
   }
 }
+//tablet
+@media (min-width: 768px) {
+  .button {
+    justify-content: center;
+  }
+}
+//desktop
 @media (min-width: 1200px) {
   .button {
     &__label {

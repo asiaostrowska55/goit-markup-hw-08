@@ -1,16 +1,14 @@
 //mobile
-@media screen and (max-width: 1200px) {
-  .heading-offer {
+.heading-offer {
+  display: none;
+}
+.offer {
+  display: none;
+  &__image {
     display: none;
   }
-  .offer {
+  &__label {
     display: none;
-    &__image {
-      display: none;
-    }
-    &__label {
-      display: none;
-    }
   }
 }
 //desktop

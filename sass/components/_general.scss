@@ -7,40 +7,13 @@ body {
   width: 100%;
   margin: 0;
 }
-@media (min-width: 1200px) {
-  .container {
-    width: 1200px;
-    margin: 0 auto;
-  }
-}
 img {
   display: block;
   margin-right: 0;
   width: 100%;
   height: auto;
 }
-// odzielny kontakt w footerze i headerze
-.contact {
-  @include transition;
-  @include font-style($weight: $font-medium, $spacing: 0.02em);
-  color: getColor("secondary");
-  font-size: getFont("regular");
-  text-decoration: none;
-  &:hover {
-    color: getColor("brand");
-  }
-  &:focus {
-    color: getColor("brand");
-  }
-  &:focus .icon--color {
-    @include transition;
-    fill: getColor("brand");
-  }
-  &:hover .icon--color {
-    @include transition;
-    fill: getColor("brand");
-  }
-}
+
 *,
 *::before,
 *::after {
@@ -49,16 +22,24 @@ img {
 .section {
   padding: 60px 15px;
 }
-@media (min-width: 1200px) {
-  .section {
-    padding: 94px 15px;
-  }
-}
 .heading {
   @include flex;
   @include font-style($weight: $font-bold);
   font-size: getFont("titles-mobile");
   padding-bottom: 30px;
+}
+
+//media
+@media (min-width: 1200px) {
+  .container {
+    width: 1200px;
+    margin: 0 auto;
+  }
+}
+@media (min-width: 1200px) {
+  .section {
+    padding: 94px 15px;
+  }
 }
 @media (min-width: 768px) {
   .heading {
