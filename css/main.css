@@ -263,6 +263,38 @@ img {
   fill: #2196f3;
 }
 
+.is-open {
+  display: flex;
+  position: fixed;
+  transform: translate(0);
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  top: 0;
+  left: 0;
+}
+
+.mobile-menu {
+  display: flex;
+  position: absolute;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  background: #f5f4fa;
+  transition: 300ms ease-in-out;
+}
+.mobile-menu__close-icon {
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  fill: #0e0a0a;
+  justify-content: center;
+  display: inline-block;
+  top: 11;
+  left: 11;
+  height: 19px;
+  width: 19px;
+}
+
 @media (min-width: 768px) {
   .mobile__toggle {
     display: none;
