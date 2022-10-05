@@ -11,6 +11,8 @@ $size: (
   "form-label": 12px,
   "webstudio": 26px,
   "web-mobile": 24px,
+  "mobile-title": 40px,
+  "mobile-phone": 34px,
 );
 
 @function getFont($key) {
