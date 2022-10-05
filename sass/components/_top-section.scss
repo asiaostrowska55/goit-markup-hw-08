@@ -3,10 +3,11 @@
   background-color: getColor("dark-bg");
   justify-content: center;
   height: 400px;
-  max-width: 100%;
-  background-image: url(/images/background.jpg);
+  max-width: 1600px;
+  background-image: url(../images/background.jpg);
   background-size: cover;
   background-position: center;
+  background-repeat: no-repeat;
   margin: 0;
   &__label {
     @include flex;
@@ -70,14 +71,14 @@
   }
 }
 //desktop
-@media (min-device-pixel-ratio: 2),
+@media screen and (min-device-pixel-ratio: 2),
   (min-resolution: 192dpi),
   (min-resolution: 2dppx) {
   .title {
-    background-image: url(/images/background@2x.jpg);
+    background-image: url(../images/background@2x.jpg);
   }
 }
-@media (min-width: 1200px) {
+@media screen and (min-width: 1200px) {
   .title {
     height: 600px;
     max-width: 1600px;
